@@ -93,7 +93,9 @@ int getN0(float epsl)
 		u = 1 + (1 / float(n));
 		n++;
 		upp = 1 + (1 / float(n));
-	}
+	} while (abs(upp - u) >= epsl);
+	return n;
+}
 	while 
 	(abs(upp - u) >= epsl);
 	return (n-1);
@@ -122,6 +124,8 @@ void ex11_series(void) {
 	}
 }
 
+
+
 float sum(int n) 
 {//数列求和，如果变量在分母，必须不能等于零！！！
 	//搞清除从零开始还是从1开始
@@ -138,6 +142,7 @@ void ex12_forseries(void)
 	int n=0;
 	float s = 0;
 	cout << "enter your limit n>> ";
+	cin >> n;
 	if (cin >> n)
 	{
 		s = sum(n);
@@ -162,7 +167,8 @@ int main()
 	//ex10_2nd_eq();
 	//ex11_series();
 	//ex12_forseries();
-
+	
 	ex12_forseries();
 
+	return 0;
 }
