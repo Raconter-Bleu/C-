@@ -1,5 +1,4 @@
 #include <iostream>
-//constexpr auto pi = 3.14159265358827;
 
 using namespace std;
 //void ex01()
@@ -209,4 +208,107 @@ using namespace std;
 //
 //	}
 //}
+void ex07() {
+	int n =0
+		,s = 0;
+	cout << "enter calcule limit:";
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
+	{
+		s += i;
+	}
+	cout << "resualt is:" << s;
+}
+
+void ex08dowhile01() {
+	int i=0, n,s=0;
+	
+	cout << "\nenter your limit";
+	cin >> n;
+		do
+		{
+			s += i;
+			i++;
+		} while (i < (n + 1));
+		cout << "\nresult is >> "<<s<<" <<" << endl;
+}
+
+void ex09while() {
+	int x, count = 0;
+	float sum = 0.0;
+	
+	cout << "enter num >> ";
+	while (cin >> x) {
+		sum += x;
+		count++;
+	
+	}
+	cout << "average is >> " << sum / float (count) << " <<" << endl;
+
+}
+
+void ex10secondorderequation() {
+	float a = 0; 
+	float b = 0; 
+	float c = 0;
+	
+
+	while (1) 
+	{
+		cout << "enter your para in order: a b c" << endl;
+	
+		if (cin >> a && cin >> b && cin >> c)
+		{
+			
+			if (abs(a) > 1e-6 || abs(b) > 1e-6 || abs(c) > 1e-6)
+			{
+				cout << "your paras are legal, they are "
+					<< a
+					<< " and "
+					<< b
+					<< " and "
+					<< c
+					<< endl
+					<< endl;
+				if (abs(b * b - 4 * a * c) >= 1e-6) {
+					cout << "ur delta>0, u have 2 roots, they are >> "
+						<< ((-b + sqrt(b * b - 4 * a * c)) / 2 * a)
+						<< " << and >> "
+						<< ((-b - sqrt(b * b - 4 * a * c)) / 2 * a)
+						<< " <<"
+						<< endl
+						<< endl;
+				}
+				else if (abs(b * b - 4 * a * c) <= 1e-6) {
+
+					cout << "ur delta=0, u have 1 root, it is >> "
+						<< (-b / (2 * a))
+						<< " <<"
+						<< endl
+						<< endl;
+				}
+				else {
+					cout << "ur delta<0, u have no roots, desole QAQ "
+						<< endl
+						<< endl;
+
+				}
+			}
+			else {
+				cout << "ur entered zero parameter, desole QAQ " 
+					<< endl
+					<< endl;
+			      }
+		}
+		else {
+			cout << "ilegal in put" << endl
+				<< endl;
+			break;
+		}
+		
+
+
+	}
+}
 
