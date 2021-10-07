@@ -241,18 +241,75 @@ using namespace std;
 //
 //}
 
-float dotproduct(float v1[], float v2[],int n)
-{
-	float v3[];
-	if (cin >> n)
-	{
-		for (auto i = 0; i < n; i++)
-		{
-			
-		}
+//float dotproduct(float v1[], float v2[],int n)
+//{
+//	float v3[];
+//	if (cin >> n)
+//	{
+//		for (auto i = 0; i < n; i++)
+//		{
+//			
+//		}
+//
+//	}
+//}
 
-	}
-}
+//void quare_find()
+//{
+//	int i, j, k;
+//	for (int i = 0; i < 10000; i++)
+//		for (int j = 0; j <= 100; j++)
+//			for (int k = 0; k <= 100; k++)
+//				if (i - 100 == j * j && i - 168 == k * k)
+//				{
+//					cout << i << endl;
+//				}
+//}
+
+//void times_table()
+//{
+//	int i=0;
+//	int j = 0;
+//	for (int i = 1; i < 10; i++)
+//	{
+//		for (int j = 1; j < 10; j++)
+//		
+//	    cout << i << "X" << j << "=" << i * j;
+//		cout << endl;
+//			
+//		}
+//	
+//	
+//}
+
+//void chess()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (j = 0; j< 8;j++)
+//	{
+//		if (j%2==0)
+//		{
+//			for (int i = 0; i < 4; i++)
+//			{
+//				cout << "□■";
+//				
+//			}
+//			cout << endl;
+//		}
+//		else 
+//		{
+//			for (int i = 0; i < 4; i++)
+//			{
+//				cout << "■□";
+//			}
+//			cout << endl;
+//		}
+//		
+//	}
+//}
+
+
 
 int main()
 {
@@ -275,5 +332,6 @@ int main()
 	//ex02double_array_1007();
 	//ex03_1007();
 	//ex04_1007();
-
+	//quare_find();
+	
 }
