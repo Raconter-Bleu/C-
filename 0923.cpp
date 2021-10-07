@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 //#include "0923.h"
-#include <math.h>
-#include <algorithm>
+//#include <math.h>
+//#include <algorithm>
 using namespace std;
 
 //int delta_2nd_eq(float a, float b, float c)
@@ -234,25 +234,34 @@ using namespace std;
 //		{
 //			o[i][j] = i1[i][j] + i2[i][j];
 //	
-//			cout << o[i][j] << endl;
+//			cout << o[i][j] << " " << endl;
 //		}
-//
-//
-//
+//	
 //}
 
-float dotproduct(float v1[], float v2[],int n)
+//float dotproduct(float v1[], float v2[],int n)
+//{
+//	float v3[];
+//	if (cin >> n)
+//	{
+//		for (auto i = 0; i < n; i++)
+//		{
+//			
+//		}
+//
+//	}
+//}
+
+void shell_set(int a [], int n)
 {
-	float v3[];
-	if (cin >> n)
+	int gap,i, j;
+	for (auto gap = int(n/2); gap > 0 ;gap=gap/2;)
 	{
-		for (auto i = 0; i < n; i++)
-		{
-			
-		}
 
 	}
+
 }
+
 
 int main()
 {
@@ -275,5 +284,8 @@ int main()
 	//ex02double_array_1007();
 	//ex03_1007();
 	//ex04_1007();
+	/*void ex04_1007();
+	return 0;*/
+
 
 }
