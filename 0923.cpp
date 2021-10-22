@@ -309,7 +309,19 @@ using namespace std;
 //	}
 //}
 
-
+void stair_prt()
+{
+	int i ;
+	int j ;
+	for (auto i = 10; i > 0; i--)
+	{
+		for (auto j = 0; j < i; j++)
+		{
+			cout << "■";
+		}
+		cout << endl;
+	}
+}
 
 int main()
 {
@@ -333,5 +345,6 @@ int main()
 	//ex03_1007();
 	//ex04_1007();
 	//quare_find();
-	
+	stair_prt();
+
 }
