@@ -18,6 +18,9 @@
     <ClCompile Include="0923.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0923.h">
